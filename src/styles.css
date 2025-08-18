@@ -1,0 +1,38 @@
+.game_board {
+  width: 440px;
+  height: 400px;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.game_item {
+  border: 2px solid black;
+  border-radius: 5px;
+  background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row_chooser {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 440px;
+  margin: 0 auto;
+  height: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.pointer {
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.5;
+  color: black;
+}
+
+.pointer.active {
+  opacity: 1;
+  color: red;
+}
